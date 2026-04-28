@@ -1,0 +1,21 @@
+{
+  "images": [
+    {
+      "idiom": "universal",
+      "filename": "flow.arrow.svg",
+      "appearances": [
+        {
+          "appearance": "any",
+          "value": "light"
+        }
+      ]
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  },
+  "properties": {
+    "preserves-vector-data": true
+  }
+}
