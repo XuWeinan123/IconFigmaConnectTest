@@ -1,0 +1,21 @@
+{
+  "images": [
+    {
+      "idiom": "universal",
+      "filename": "air.traffic.control.svg",
+      "appearances": [
+        {
+          "appearance": "any",
+          "value": "light"
+        }
+      ]
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  },
+  "properties": {
+    "preserves-vector-data": true
+  }
+}
