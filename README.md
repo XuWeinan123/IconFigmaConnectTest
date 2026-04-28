@@ -18,7 +18,7 @@
 
 当然这一步纯粹是个人习惯，想让图标命名更加清晰一些。
 
-![Figma 图标页面截图](/Users/wally/Library/Application Support/typora-user-images/image-20260428101429267.png)
+![Figma 图标页面截图](https://raw.githubusercontent.com/XuWeinan123/blogImage/main/img/image-20260428101429267.png)
 
 ## 2. 使用 icona 上传图标
 
@@ -32,7 +32,7 @@
 
 符合预期，它向我的 Github 仓库提交了一个 PR，生成了一个 icons.json 文件。
 
-![Github Json 文件截图](/Users/wally/Library/Application Support/typora-user-images/image-20260428101403181.png)
+![Github Json 文件截图](https://raw.githubusercontent.com/XuWeinan123/blogImage/main/img/image-20260428101403181.png)
 
 至此 Figma 到 Github 的链路是打通了。
 
@@ -48,7 +48,7 @@
 
 先解释 Github Actions 的本质吧，了解本质之后再整理 Prompt 丢给 AI 处理。
 
-![image-20260428112842868](/Users/wally/Library/Application Support/typora-user-images/image-20260428112842868.png)
+![image-20260428112842868](https://raw.githubusercontent.com/XuWeinan123/blogImage/main/img/image-20260428112842868.png)
 
 Github Actions 的本质是 yaml 文件，我这个项目中还包含 js 脚本来批处理一些逻辑。前者简单来说就是一个配置文件，配置 Actions 的触发条件，声明所需要的权限，以及说明需要做的工作。而后者则是具体的脚本，用来将图标数据转换成 iOS 工程识别，也就是干具体的活，如何调用会在前者中说明。
 
@@ -82,7 +82,7 @@ Antigravity 确认调整后直接执行，创建了对应的两个文件。
 2. 刷新 GitHub 后，确实看到其收到了 PR。
 3. Github Actions 也成功被触发。我的邮箱收到了三份连续的邮件：bot pushed 了一个 commit，bot approved 了一个 pr，branch 被 merged 到了主分支。
 
-![image-20260428133514374](/Users/wally/Library/Application Support/typora-user-images/image-20260428133514374.png)
+![image-20260428133514374](https://raw.githubusercontent.com/XuWeinan123/blogImage/main/img/image-20260428133514374.png)
 
 同时，查看生成的 Assets.xcassets 文件夹，内部确实按照 js 文件的规则生成了一堆复合条件的 .imageset 文件。如果是在真实项目中，在 js 中修改目标路径应该就可以满足生产需求了。
 
